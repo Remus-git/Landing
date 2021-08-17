@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+.headercontainer{
+  
+   justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.navbar{
+    padding-left: 40px;
+    padding-right: 40px ;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 661.5px;
+    text-decoration: none;
+}
+.navbar li{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    text-decoration: none;
+}
+
+.logo{    
+   color: white;
+   font-size: 2.2rem;
+   display: flex;
+   width: 400px;
+   }
+.logo a{
+    text-decoration: none;
+    color: white;
+}   
+
+#searchbutton{
+    color:white; 
+}
+#backgroundimage{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.borderbox input{
+    padding-left: 7px;
+    border: 0;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    transition: 0.7s;
+    width: 0;
+    color: white;
+    
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+    cursor: pointer;   
+}
+
+.active input{
+    width: 200px;
+    padding-left: 7px;
+}
+#backgroundimage img{
+    width: 100%;
+    border-bottom: 20%;
+    height: 100vh;
+}
+.headline{
+    position: absolute;
+    font-size: 8rem;
+    color: white;
+    bottom: 470px;
+    font-family: 'Share Tech', sans-serif;
+    
+}
+.headline span{
+    color: #0cc0bd;
+}
+.secondheadline{
+    color: grey;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 130px;
+    text-align: center;
+    width: 100%;
+}
+.secondheadline span{
+    font-family: sans-serif;
+}
+
+ .menubar{
+    display: none ;
+} 
+.menubar a{
+    color: white;
+    font-size: 20px;
+}
+.explorebutton{
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    background-color:white;
+    border-radius: 7%;
+    bottom: 500px;
+    right: 10px;
+}
+.explorebutton h3{
+    position: relative;
+   display: flex;
+   justify-content: center;
+align-items: center;
+    height: 45px;
+    font-family: 'Bebas Neue';
+    color: black;
+}
+.explorebutton a{
+    text-decoration: none;
+}
+
+@media(max-width: 846px){
+   .headline{
+       width: 100%;
+       font-size: 50px;
+       display: inline;
+       text-align: center;
+       bottom: 300px;
+   }
+   .navbar ul{
+       justify-content: center;
+       flex-wrap: wrap;
+       display: none;
+   }
+   .menubar{
+       display: block;
+   }
+   .secondheadline{
+       display: none;
+   }
+}
