@@ -32,19 +32,21 @@ ul{
     list-style: none;
     justify-content: space-between;
     width: 661.5px;
-    text-decoration: none;
+    
 }
 .navbar li{
     color:white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    
+}
+.navbar ul a {
     text-decoration: none;
 }
-
 .logo{    
    color: white;
    font-size: 2.2rem;
    display: flex;
-   width: 300px;
+   width: 3git s00px;
    }
 .logo a{
     text-decoration: none;
