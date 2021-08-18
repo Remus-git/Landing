@@ -30,13 +30,15 @@
 .navcontainer{
     display: flex;
     list-style: none;
-    justify-content: space-between;
-    width: 661.5px;
     
 }
 .menu a{
     color:white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    
+}
+.contact a{
+    padding: 0;
 }
 .navbar  a {
     text-decoration: none;
@@ -50,14 +52,14 @@
 }
 .dropdownmenu{
     width: 200px;
-    height: 300px;
+    height: 298px;
     background-color: rgb(20, 20, 20);
     position: absolute;
     border-radius: 2%;
     z-index: 1000;
     display: none;
 }
-.dropdownmenu ul{
+.dropdownmenu ul {
     display: flex;
     flex-direction: column;
     word-spacing: 10px;
@@ -141,7 +143,6 @@
 .secondheadline span{
     font-family: sans-serif;
 }
-
  .menubar{
     display: none ;
 } 
@@ -171,7 +172,7 @@ align-items: center;
     text-decoration: none;
 }
 
-@media(max-width: 846px){
+@media(max-width: 837px){
    .headline{
        width: 100%;
        font-size: 50px;
