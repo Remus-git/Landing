@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/5af73e67ac.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="container">
+            <div class="navcontainer">
+                <div class="navbar">
+                    <div class="logocontainer">
+                        LUX
+                    </div>
+                    <div class="menucontainer">
+                        <ul>
+                            <a href="Lux.html"><li>Home</li></a>
+                            <div id="hovermenu"><a href="" >Menu</a>
+                                <div class="dropdownmenucontainer">
+                                    <div class="dropdownmenu"><a href="">Best Products</a></div>
+                                    <div class="dropdownmenu"><a href="">Most Popular</a></div>
+                                    <div class="dropdownmenu"><a href="">Smart Home</a></div>
+                                    <div class="dropdownmenu"><a href="">Domestic Bots</a></div>
+                                    <div class="dropdownmenu"><a href="">Daily Gadgets</a></div>
+                                </div>    
+                            </div>
+                            <a href="" style="padding: 0;"><li>Contact</li></a>
+                        </ul>
+                    </div>  
+                    <div class="searchboxcontainer">
+                        <div class="borderbox">
+                            <i class="fas fa-search" id="searchbutton"></i>
+                            <input type="text" placeholder="What are you looking for?">
+                        </div>                     
+                    </div>  
+                </div>
+            </div>
+            <div class="headcontainer">
+                 <div class="headlinecontainer">
+                    <div class="headline">Our Daily Best Products</div>
+                    <div class="secondheadline">Our Products Are Sort By Ratings</div>headline
+                 </div>
+                 <img src="bestproducts1.jpg" alt="">
+            </div>
+            <div class="productcontainer"></div>
+        <script>
+            let SearchBox = document.querySelector(".searchboxcontainer")
+            let SearchButton = document.querySelector("#searchbutton")
+            
+            SearchButton.onclick = function(){
+                SearchBox.classList.toggle("active")
+                console.log(SearchBox);
+            }
+        </script>
+    </body>
+</html>
