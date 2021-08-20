@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUX -Your Luxuries Collections</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/5af73e67ac.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+   
+    
+</head>
+<body>
+    <div class="container">
+        <div class="headercontainer">
+            <div>
+                <img src="/backgrounds/websitebackground.jpg" alt="" id="backgroundimage">    
+                <nav class="navBar">
+                    <div class="logo">
+                        <a href="index.html">LUX</a>
+                    </div>
+                    <div class="navContainer">
+                        <div class="menu"><a href="index.html" style="padding-right: 150px;">Home</a></div>
+                        <div class="menu" id="menufunction"><a href="" style="padding-right: 150px;">Menu</a>
+                            <div class="dropDownMenu">
+                                <ul>
+                                    <a href="Products.html"><li>Best Products</li></a>
+                                    <a href="mostpopular.html"><li>Most Popular</li></a>
+                                    <a href="smartHome.html"><li>Smart Home</li></a>
+                                    <a href="domesticBots.html"><li>Domestic Bots</li></a>
+                                    <a href="dailyGadgets.html"><li>Daily Gadgets</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu"><a href="" style="padding: 0;">Contact</a></div>
+                    </div>
+                    <div class="menuBar"><a href=""><i class="fas fa-bars"></i></div></a>
+                      <div class="searchbox">   
+                          <div class="borderBox">
+                            <i class="fas fa-search" id="searchbutton"></i>
+                            <input type="text" placeholder="What are you looking for?">
+                          </div>                       
+                      </div>
+                      
+                </nav>
+            </div>
+            <div class="headLine">
+                LATEST <span>Lux Techs</span>
+                <br>
+                At LUX
+            </div>
+            <div class="secondHeadLine">
+                <span>Welcome to LUX <br>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum consectetur magnam perspiciatis numquam dignissimos labore repudiandae, amet laboriosam iste neque dolores, at autem sunt aspernatur omnis quas aut voluptatem.
+                </span>
+            </div>
+        </div>
+    </div>
+ 
+    <script>
+        let SearchBox = document.querySelector(".searchbox")
+        let SearchButton = document.querySelector("#searchbutton")
+        
+        SearchButton.onclick = function(){
+            SearchBox.classList.toggle("active")
+            console.log(SearchBox);
+        }
+    </script>
+
+</body>
+</html> 
