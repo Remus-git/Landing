@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.navContainer{
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(20, 20, 20); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar{
+    width: 95%;
+    height: 80%;
+    background-color: rgb(25, 25, 25);
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoContainer{  
+}
+.logoContainer a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(2rem,2.5vw,4rem);
+}
+.menuContainer ul{
+    display:flex ;
+}
+.menuContainer a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menuContainer :hover{
+    color: aquamarine;
+}
+#hoverMenu:hover .dropDownMenuContainer{
+    display: block;
+}
+.dropDownMenuContainer{
+    width: 200px;
+    height: 298px;
+    background-color: rgb(30, 30, 30);
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.dropDownMenu a{
+    padding: 0;
+    word-spacing: 10px;
+    padding-left: 30px;
+    
+}
+.dropDownMenu{
+    padding:15px ;
+    
+}
+.menuBar{
+    display: none;
+}
+.menuBar {
+    color: white;
+}
+.searchcontainer {
+    width: 400px;
+}   
+.active .borderBox input{
+    width: 200px;
+    transition: 1s;
+}
+#searchbutton{
+    color: white;
+    cursor: pointer;
+}
+.borderBox input{
+    padding-left: 7px;
+    border: 0;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    transition: 0.7s;
+    width: 0;
+    color: white;
+}
+.backgroundImage{
+    width: 50%;
+    height: 100%;
+}
+.backgroundImage img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 18px;
+}
+.contactContainer{
+    width: 100%;
+    display: flex;
+    height: 86%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 41px;
+    padding-right: 41px;
+    
+}
+.contact{
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.headline{
+    font-size: clamp(2px,2vh,4rem);
+    font-family: 'Share Tech', sans-serif;
+}
+.textBox{
+    width: 100%;
+    
+}
+.textBox textarea{
+   width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: solid rgb(192, 190, 190);
+    color: white;
+    outline: none;
+    font-size: 1rem; 
+    font-family: 'Share Tech', sans-serif;
+    border-bottom-width: 1px;
+    text-align: center;
+    
+}
+.nameTextBox{
+    width: 100%;
+    padding-top: 100px;
+}
+.nameTextBox input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: solid rgb(192, 190, 190);
+    color: white;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: 'Share Tech', sans-serif;
+    border-bottom-width: 1px;
+    text-align: center;
+}
+.mailTextBox{
+    width: 100%;
+    padding-top: 30px;
+}
+.mailTextBox input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: solid rgb(192, 190, 190);
+    color: white;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: 'Share Tech', sans-serif;
+    border-bottom-width: 1px;
+    text-align: center;
+}
+.contact h5{
+    padding-top: 30px;
+    font-size: clamp(0.4rem,100%,1.2rem);
+    color: rgb(185, 185, 185);
+    font-family: 'Share Tech', sans-serif;
+}
+.submitButton{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    height: 100%;
+}
+.submitButton button{
+    width: clamp(10px,50%,200px);
+    height: clamp(20px,20%,200px);
+    background-color: grey;
+    border-radius: 18px;
+}
+.drawerMenuContainer1{
+}
+.drawerMenuContainer2{
+   width: 50%;
+   background-color:rgb(20, 20, 20);
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 0px;
+   z-index: 6;
+   display: none;
+}
+.drawerMenu ul{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.drawerMenu a{
+   color: white;
+   text-decoration: none;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+}
+.drawerMenu  i{
+   font-size: 13px;
+}
+.drawerMenu li{
+   list-style: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.crossButton{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 20px;
+}
+.crossButton i{
+   color: white;
+   font-size: clamp(1.4rem,2vw,3rem);
+   float: right;
+}
+.drawerSearchBar{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   border-radius: 2px;
+   background-color: rgb(41, 41, 41);
+   height: 25px;
+   border-radius:20px ;
+}
+.drawerSearchBar i {
+   color: white;
+   font-size: clamp(1rem,2vw,1rem);
+}
+.drawerSearchBar input{
+   background: transparent;
+   outline: none;
+   border: none;
+   padding-left: 5px;
+   color: white;
+   width: 100px
+}
+.visible .drawerMenuContainer2{
+   display: block;
+}
+.unvisible{
+   z-index: 30;
+   padding-bottom: 30px;
+}
+.drawerSubMenu li{
+   color: rgb(187, 187, 187);
+   list-style: none;
+   font-size: 13px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.drawerSubMenu a{
+   text-decoration: none;
+   
+}
+.subMenu{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+}
+.subMenu {
+   list-style: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: white;
+}
+.subMenu i{
+   color: white;
+}
+.drawerSubMenu{
+   display: none;
+}
+.view{
+   display: block;
+}
+@media(max-width:340px){
+   .drawerMenuContainer2{
+       width: 100%;
+   }
+}
+@media(min-width:837px){
+   .drawerMenuContainer1{
+       display: none;
+   }
+}
+@media(max-width: 837px){
+
+    .headLine{
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+    .navBar{
+        width: 95%;
+        max-height: 50px;
+    }
+    .navContainer{
+        width: 100%;
+    }
+    .menuContainer{
+        justify-content: center;
+        flex-wrap: wrap;
+        display: none;
+    }
+    .menuBar{
+        display: block;
+    }
+    .backgroundImage{
+        display: none;
+    }
+    .contact{
+        width: 100%;
+        text-align: center;
+    }
+    .searchBoxContainer{
+        display: none;
+    }
+
+ }
+ @media(max-width: 500px){
+    .headContainer
+{
+        width: 100%;
+        height: 200px;
+    }
+    .headContainer
+ img{
+        width: 95%;
+        height: 200px;
+    }
+    .headLineContainer{
+        width: 100%;
+        height: 200px;
+    }
+   .productContainer{
+       padding-top:90px ;
+   }
+ }
+
+ @media(max-width:340px){
+     .searchBoxContainer{
+         display: none;
+     }
+     .first img{
+         max-width: 150px;
+         max-height: 100px;
+     }
+ }

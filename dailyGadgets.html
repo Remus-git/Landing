@@ -30,9 +30,10 @@
                                     <div class="dropDownMenu"><a href="dailyGadgets.html">Daily Gadgets</a></div>
                                 </div>    
                             </div>
-                            <a href="" style="padding: 0;"><li>Contact</li></a>
+                            <a href="Contact.html" style="padding: 0;"><li>Contact</li></a>
                         </ul>
                     </div>  
+                    <div class="menuBar"><i class="fas fa-bars"></i></div> 
                     <div class="searchBoxContainer">
                         <div class="borderBox">
                             <i class="fas fa-search" id="searchbutton"></i>
@@ -41,8 +42,46 @@
                     </div>  
                 </div>
             </div>
-            <div class="headContainer
-">
+            <div class="drawerMenuContainer1">
+                <div class="drawerMenuContainer2">
+                    <div class="drawerMenu">
+                        <div class="crossButton">
+                            <div class="drawerSearchBar">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="What are you looking for?">
+                            </div>                
+                        </div>
+                        <ul>
+                            <a href="index.html"><li>Home</li>
+                                    <i class="fas fa-greater-than"></i> 
+                            </a>
+                            <div class="subMenu">
+                                    Menu
+                                    <i class="fas fa-greater-than"></i>
+                            </div>
+                            <div class="drawerSubMenu">
+                                <ul>
+                                    <hr>
+                                    <a href="bestProducts.html"><li>Best Products</li></a>
+                                        <hr>
+                                    <a href="mostpopular.html"><li>Most Popular</li></a>
+                                        <hr>
+                                    <a href="smartHome.html"><li>Smart Hoem</li></a>
+                                        <hr>
+                                    <a href="domesticBots.html"><li>Domestic Bots</li></a>
+                                        <hr>
+                                    <a href="dailyGadgets.html"><li>Daily Gadgets</li></a>
+                                        <hr>
+                                </ul>    
+                            </div>    
+                            <a href="Contact.html"><li>Contact</li>
+                                    <i class="fas fa-greater-than"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>        
+            </div>
+            <div class="headContainer">
             <div class="headLineContainer">
                     <div class="headLine">Daily Gadgets</div>
                     <div class="secondHeadLine">Our Products Are Sort By Ratings</div>headLine
@@ -142,14 +181,27 @@
 
                 </div>
             </div>
-        <script>
-            let SearchBox = document.querySelector(".searchBoxContainer")
-            let SearchButton = document.querySelector("#searchbutton")
-            
-            SearchButton.onclick = function(){
-                SearchBox.classList.toggle("active")
-                console.log(SearchBox);
-            }
-        </script>
+            <script>
+                let SearchBox = document.querySelector(".searchbox")
+                let SearchButton = document.querySelector("#searchbutton")
+                
+                SearchButton.onclick = function(){
+                    SearchBox.classList.toggle("active")
+                }
+        
+                let MenuBar = document.querySelector(".menuBar")
+                let DrawerMenu = document.querySelector(".drawerMenuContainer1")
+                MenuBar.onclick = function(){
+                    DrawerMenu.classList.toggle("visible")
+                    MenuBar.classList.toggle("unvisible")
+                    console.log("Work")
+                }
+                let SubMenu = document.querySelector(".subMenu ")
+                let DrawerSubMenu = document.querySelector(".drawerSubMenu")
+                SubMenu.onclick = function(){
+                    DrawerSubMenu.classList.toggle("view")
+                    console.log("work")
+                }
+            </script>
     </body>
 </html>

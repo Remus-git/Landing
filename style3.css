@@ -6,7 +6,6 @@
 .container{
     width: 100%;
     background-color: black;
-    
 }
 .navContainer{
     width: 100%;
@@ -73,7 +72,7 @@
 .menuBar{
     display: none;
 }
-.menuBar a{
+.menuBar {
     color: white;
 }
 .searchcontainer {
@@ -230,6 +229,7 @@
     .menuBar{
         display: block;
     }
+
  }
  @media(max-width: 500px){
     .headContainer
@@ -260,3 +260,118 @@
          max-height: 100px;
      }
  }
+ .drawerMenuContainer1{
+ }
+ .drawerMenuContainer2{
+    width: 50%;
+    background-color:rgb(20, 20, 20);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 6;
+    display: none;
+}
+.drawerMenu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.drawerMenu a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.drawerMenu  i{
+    font-size: 13px;
+}
+.drawerMenu li{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.crossButton{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.crossButton i{
+    color: white;
+    font-size: clamp(1.4rem,2vw,3rem);
+    float: right;
+}
+.drawerSearchBar{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: rgb(41, 41, 41);
+    height: 25px;
+    border-radius:20px ;
+}
+.drawerSearchBar i {
+    color: white;
+    font-size: clamp(1rem,2vw,1rem);
+}
+.drawerSearchBar input{
+    background: transparent;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    color: white;
+    width: 100px
+}
+.visible .drawerMenuContainer2{
+    display: block;
+}
+.unvisible{
+    z-index: 30;
+    padding-bottom: 30px;
+}
+.drawerSubMenu li{
+    color: rgb(187, 187, 187);
+    list-style: none;
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.drawerSubMenu a{
+    text-decoration: none;
+    
+}
+.subMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.subMenu {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.subMenu i{
+    color: white;
+}
+.drawerSubMenu{
+    display: none;
+}
+.view{
+    display: block;
+}
+@media(max-width:340px){
+    .drawerMenuContainer2{
+        width: 100%;
+    }
+    .menuBar{
+        
+    }
+}
+@media(min-width:837px){
+    .drawerMenuContainer1{
+        display: none;
+    }
+}

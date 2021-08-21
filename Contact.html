@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://kit.fontawesome.com/5af73e67ac.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navContainer">
+            <div class="navBar">
+                <div class="logoContainer">
+                   <a href="index.html"> LUX</a>
+                </div>
+                <div class="menuContainer">
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <div id="hoverMenu"><a href="" >Menu</a>
+                            <div class="dropDownMenuContainer">
+                                <div class="dropDownMenu"><a href="bestproducts.html">Best Products</a></div>
+                                <div class="dropDownMenu"><a href="mostPopular.html">Most Popular</a></div>
+                                <div class="dropDownMenu"><a href="smartHome.html">Smart Home</a></div>
+                                <div class="dropDownMenu"><a href="domesticBots.html">Domestic Bots</a></div>
+                                <div class="dropDownMenu"><a href="dailyGadgets.html">Daily Gadgets</a></div>
+                            </div>    
+                        </div>
+                        <a href="" style="padding: 0;"><li>Contact</li></a>
+                    </ul>
+                </div>  
+                <div class="menuBar"><i class="fas fa-bars"></i></div> 
+                <div class="searchBoxContainer">
+                    <div class="borderBox">
+                        <i class="fas fa-search" id="searchbutton"></i>
+                        <input type="text" placeholder="What are you looking for?">
+                    </div>                     
+                </div>  
+            </div>
+        </div>
+        <div class="drawerMenuContainer1">
+            <div class="drawerMenuContainer2">
+                <div class="drawerMenu">
+                    <div class="crossButton">
+                        <div class="drawerSearchBar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="What are you looking for?">
+                        </div>                
+                    </div>
+                    <ul>
+                        <a href="index.html"><li>Home</li>
+                                <i class="fas fa-greater-than"></i> 
+                        </a>
+                        <div class="subMenu">
+                                Menu
+                                <i class="fas fa-greater-than"></i>
+                        </div>
+                        <div class="drawerSubMenu">
+                            <ul>
+                                <hr>
+                                <a href="bestProducts.html"><li>Best Products</li></a>
+                                <hr>
+                                <a href="mostpopular.html"><li>Most Popular</li></a>
+                                    <hr>
+                                <a href="smartHome.html"><li>Smart Hoem</li></a>
+                                    <hr>
+                                <a href="domesticBots.html"><li>Domestic Bots</li></a>
+                                    <hr>
+                                <a href="dailyGadgets.html"><li>Daily Gadgets</li></a>
+                                    <hr>
+                            </ul>    
+                        </div>    
+                        <a href="Contact.html"><li>Contact</li>
+                                <i class="fas fa-greater-than"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>        
+        </div>
+        <div class="contactContainer">
+            <div class="contact">
+                <div class="headline"> Contact Us</div>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <div class="nameTextBox"><input type="text" placeholder="Enter Your Name Here"></div>
+                <div class="mailTextBox"><input type="email" placeholder="Email here"></div>
+                <div class="textBox"><textarea name="" id="" cols="56" rows="5" placeholder="Enter your massage here"></textarea></div>
+                <div class="submitButton"><button type="submit">Send Email</button></div>
+            </div>
+            <div class="backgroundImage">
+                <img src="/backgrounds/contact.jpg" alt="">
+            </div>
+        </div>   
+    </div>
+    <script>
+        let SearchBox = document.querySelector(".searchbox")
+        let SearchButton = document.querySelector("#searchbutton")
+        
+        SearchButton.onclick = function(){
+            SearchBox.classList.toggle("active")
+        }
+
+        let MenuBar = document.querySelector(".menuBar")
+        let DrawerMenu = document.querySelector(".drawerMenuContainer1")
+        MenuBar.onclick = function(){
+            DrawerMenu.classList.toggle("visible")
+            MenuBar.classList.toggle("unvisible")
+            console.log("Work")
+        }
+        let SubMenu = document.querySelector(".subMenu ")
+        let DrawerSubMenu = document.querySelector(".drawerSubMenu")
+        SubMenu.onclick = function(){
+            DrawerSubMenu.classList.toggle("view")
+            console.log("work")
+        }
+    </script>
+</body>
+</html>
