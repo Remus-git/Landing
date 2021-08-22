@@ -182,6 +182,8 @@
                 </div>
             </div>
             <script>
+                let menuBarValue=0;
+                let menuBarSrc = document.querySelector(".menuBar i")
                 let SearchBox = document.querySelector(".searchBoxContainer")
                 let SearchButton = document.querySelector("#searchbutton")
                 
@@ -194,7 +196,10 @@
                 MenuBar.onclick = function(){
                     DrawerMenu.classList.toggle("visible")
                     MenuBar.classList.toggle("unvisible")
-                    console.log("Work")
+                    menuBarValue += 1;
+                    if(menuBarValue>0){
+                    menuBarSrc.classList.toggle("fa-times")
+                    }
                 }
                 let SubMenu = document.querySelector(".subMenu ")
                 let DrawerSubMenu = document.querySelector(".drawerSubMenu")
