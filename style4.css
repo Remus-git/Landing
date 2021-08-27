@@ -129,21 +129,24 @@
 }
 .textBox{
     width: 100%;
-    
 }
 .textBox textarea{
+    margin-top: 30px;
    width: 100%;
     height: 100%;
-    border: none;
+    border: solid rgb(25, 25, 25);
+    border-radius: 18px;
     background: transparent;
-    border-bottom: solid rgb(192, 190, 190);
+    border-bottom: solid rgb(25, 25, 25);
     color: white;
     outline: none;
     font-size: 1rem; 
     font-family: 'Share Tech', sans-serif;
-    border-bottom-width: 1px;
     text-align: center;
-    
+    background-color: rgb(25, 25, 25);
+}
+.textBox ::placeholder{
+    color: white;
 }
 .nameTextBox{
     width: 100%;
@@ -152,15 +155,19 @@
 .nameTextBox input{
     width: 100%;
     height: 100%;
-    border: none;
+    border: solid rgb(25, 25, 25);
+    border-radius: 18px;
     background: transparent;
-    border-bottom: solid rgb(192, 190, 190);
+    border-bottom: solid rgb(25, 25, 25);
     color: white;
     outline: none;
     font-size: 1.2rem;
     font-family: 'Share Tech', sans-serif;
-    border-bottom-width: 1px;
     text-align: center;
+    background-color: rgb(25, 25, 25);
+}
+.nameTextBox ::placeholder{
+    color: white;
 }
 .mailTextBox{
     width: 100%;
@@ -169,15 +176,19 @@
 .mailTextBox input{
     width: 100%;
     height: 100%;
-    border: none;
+    border: solid rgb(25, 25, 25);
+    border-radius: 18px;
     background: transparent;
-    border-bottom: solid rgb(192, 190, 190);
+    border-bottom: solid rgb(25, 25, 25);
     color: white;
     outline: none;
     font-size: 1.2rem;
     font-family: 'Share Tech', sans-serif;
-    border-bottom-width: 1px;
     text-align: center;
+    background-color: rgb(25, 25, 25);
+}
+.mailTextBox ::placeholder{
+    color: white;
 }
 .contact h5{
     padding-top: 30px;
@@ -194,26 +205,28 @@
 .submitButton button{
     width: clamp(10px,50%,200px);
     height: clamp(20px,20%,200px);
-    background-color: grey;
+    background-color: rgb(25, 25, 25);
     border-radius: 18px;
-}
-.drawerMenuContainer1{
+    border: none;
+    color: white;
+    text-decoration: none;
 }
 .drawerMenuContainer2{
-   width: 50%;
+   width: 0;
    background-color:rgb(20, 20, 20);
    height: 100%;
    position: absolute;
    top: 0;
    right: 0px;
    z-index: 6;
-   display: none;
+   transition: 1s;
 }
 .drawerMenu ul{
    width: 100%;
    height: 100%;
    display: flex;
    flex-direction: column;
+   display: none;
 }
 .drawerMenu a{
    color: white;
@@ -251,6 +264,7 @@
 .drawerSearchBar i {
    color: white;
    font-size: clamp(1rem,2vw,1rem);
+   display: none;
 }
 .drawerSearchBar input{
    background: transparent;
@@ -258,10 +272,21 @@
    border: none;
    padding-left: 5px;
    color: white;
-   width: 100px
+   width: 100px;
+   display: none;
 }
 .visible .drawerMenuContainer2{
-   display: block;
+   width: 50%;
+   transition: 1s;
+}
+.visible input {
+    display: block;
+}
+.visible i{
+    display: block;
+}
+.visible ul{
+    display: block;
 }
 .unvisible{
    z-index: 30;
@@ -302,7 +327,7 @@
    display: block;
 }
 @media(max-width:340px){
-   .drawerMenuContainer2{
+   .visible .drawerMenuContainer2{
        width: 100%;
    }
 }
